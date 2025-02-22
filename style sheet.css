@@ -1,0 +1,46 @@
+/* Test comment*/
+body {
+    font-family: 'Chivo Mono';
+    font-weight: 300;
+    background-color: #ae95d0;
+  }
+b {
+    font-weight: 700;
+}
+h1 {
+    color: #574a68;
+    text-align: center;
+  }
+h2 {
+    color: #574a68;
+    text-align: center;
+}
+h3 {
+    color: #574a68;
+    text-align: center;
+}
+h4 {
+    color: #574a68;
+    text-align: center;
+}
+div.big {
+    width: 200px;
+    margin: auto
+}
+div.small {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border-style: solid;
+    border-color: #574a68;
+    border-width: 5px;
+    background-color: #cebfe2;
+}
+p {
+    color: black;
+    text-align: center;
+}
+ul {
+    display: table;
+    margin: 0 auto;
+}
