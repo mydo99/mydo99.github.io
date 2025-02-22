@@ -44,3 +44,8 @@ ul {
     display: table;
     margin: 0 auto;
 }
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
