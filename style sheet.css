@@ -44,6 +44,7 @@ div.topnav {
     top: 0;
     width: 100%;
     margin: auto;
+    z-index: 999;
 }
 div.main {
     margin-top: 100px;
