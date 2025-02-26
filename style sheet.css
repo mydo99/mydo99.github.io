@@ -45,9 +45,43 @@ div.topnav {
     width: 100%;
     margin: auto;
     z-index: 999;
+    
 }
+div.sidenav {
+    margin-top: 80px;
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 240px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+  
+  /* The navigation menu links */
+  div.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    display: block;
+  }
+a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+  /* When you mouse over the navigation links, change their color */
+  div.sidenav a:hover {
+    background-color: #ddd;
+    color: #000000;
+  }
 div.main {
-    margin-top: 100px;
+    margin-top: 120px;
+    margin-left: 200px;
 }
 p {
     color: black;
@@ -68,14 +102,14 @@ li {
     padding: 8px;
     padding: 20px 18px;
     text-align: center;
-    font-size: 24px;
+    font-size: 36px;
     float: left;
     color: #000000;
   }
 
 .topnav a:active {
     background-color: #000000;
-  color: white;
+    color: white;
 }
 .topnav a:hover {
     background-color: #ddd;
