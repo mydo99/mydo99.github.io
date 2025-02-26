@@ -40,6 +40,13 @@ div.small {
 div.topnav {
     background-color: #855fb9;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: auto;
+}
+div.main {
+    margin-top: 100px;
 }
 p {
     color: black;
