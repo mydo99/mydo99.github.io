@@ -44,10 +44,16 @@ div.topnav {
 p {
     color: black;
     text-align: center;
+    position: relative;
 }
 ul {
     display: table;
     margin: 0 auto;
+    text-align: center;
+    list-style-position: inside;
+}
+li {
+    vertical-align: middle;
 }
 .topnav a {
     display: block;
@@ -66,4 +72,13 @@ ul {
 .topnav a:hover {
     background-color: #ddd;
     color: black;
+  }
+
+  iframe {
+    aspect-ratio: 16/9;
+    height: auto;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
