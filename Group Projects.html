@@ -31,7 +31,7 @@
         <a class="anchor" id="Aislinn"></a>
         <h1>Aislinn by Daydream Studios</h1>
         <iframe frameborder="0" allowfullscreen=""
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe><br>
+        src="https://www.youtube.com/embed/7sjgwCrpKwo"></iframe><br>
         <div class="small">
             <p>
                 <b>Project Duration:</b> September 2024 - May 2025<br>
@@ -62,7 +62,7 @@
                 <li>Save systems</li>
             </ul>
             </p>
-            <h2>Player Traversal</h2>
+            <h2>Movement and Traversal</h2>
             <p>
                 <ul>
                     <li class="big">Iterated on character walking, sprinting, and strafing to fit with gameplay and animation</li>
@@ -94,7 +94,54 @@
                     scrolling="no"
                     allowfullscreen></iframe>
             </details>
-            
+            <h2>Combat Systems</h2>
+            <p>
+                <ul>
+                    <li class="big">Implemented an attack combo system for the player</li>
+                    <li class="big">Worked with the animators to blend animations with combat gameplay</li>
+                    <li class="big">Created a "shield"-like mechanic for the player to block attacks</li>
+                    <li class="big">Utilised the AI systems in Unreal Engine to create enemy behaviours</li>
+                    <ul>
+                        <li>Used AI Behaviour Trees for wandering around and initiating chase and attack behaviours</li>
+                        <li>Designed enemy class with inheritance in mind for variants</li>
+                        <li>Worked with AI Perception Component to design and tweak enemy detection</li>
+                    </ul>
+                    <li class="big">Iterated on quality of life features including a hit-stun effect and hit-flash material for both the player and enemies</li>
+                </ul>
+            </p>
+            <details>
+                <summary>Click to view code snippets for Combat Systems</summary>
+                <h3><u>Attack Combo System</u></h3>
+                <p class ="details">
+                    Note: You may want to toggle Fullscreen and Graph for the best viewing experience.
+                    <iframe class="blueprint"
+                    src="https://blueprintue.com/render/1wxiugh7/"
+                    scrolling="no"
+                    allowfullscreen></iframe>
+                </p>
+                <h3><u>Shield System</u></h3>
+                <p class ="details">
+                    <iframe class="blueprint"
+                    src="https://blueprintue.com/render/p996vl6v/"
+                    scrolling="no"
+                    allowfullscreen></iframe>
+                    <iframe class="blueprint"
+                    src="https://blueprintue.com/render/pjhek7zh/"
+                    scrolling="no"
+                    allowfullscreen></iframe>
+                </p>
+                <h3><u>Enemy AI Behaviour Tree</u></h3>
+                <p class ="details">
+                    Note: This is a simplified version of the Enemy AI Behaviour Tree.
+                    <img src="phil_bt_full_tree.svg" alt="Enemy AI Behaviour Tree">
+                </p>
+                <h3>Player Take Damage</h3>
+                <p class ="details">
+                    <iframe class="blueprint"
+                    src="https://blueprintue.com/render/vinqs10s/"
+                    scrolling="no"
+                    allowfullscreen></iframe>
+            </details>
         </div>
         <a class="anchor" id="HiveMind"></a>
         <h1>Hive Mind by Deathcap Studios</h1>
