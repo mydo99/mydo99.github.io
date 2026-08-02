@@ -5,19 +5,19 @@
 }
 
 :root {
-    --h-text: #574a68;
-    --border-text: #574a68;
-    --primary-background: #cebfe2;
-    --secondary-background: #b19eca;
-    --nav-background: #855fb9;
-    --nav-border: #684b90;
+    --primary: #85586F;
+    --secondary: #AC7D88;
+    --tertiary: #DEB6AB;
+    --text: #2e2e2e;
+    --alt: #F8ECD1;
+    --background: #e2c6bed3;
 }
 
 /* General */
 
 body {
     font-family: 'Dangrek-Regular';
-    background-color: #ae95d0;
+    background-color: var(--background);
     margin: 0;
   }
 b {
@@ -25,27 +25,27 @@ b {
 }
 h1 {
     font-size: 80px;
-    color: var(--h-text);
+    color: var(--secondary);
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
   }
 h2 {
     font-size: 40px;
-    color: var(--h-text);
+    color: var(--secondary);
     text-align: center;
     margin-top: 0;
 }
 h3 {
     font-size: 36px;
-    color: var(--h-text);
+    color: var(--secondary);
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
 }
 h4 {
     font-size: 32px;
-    color: var(--h-text);
+    color: var(--secondary);
     text-align: center;
     margin-top: 20px;
     margin-bottom: 0px;
@@ -59,20 +59,20 @@ div.small {
     margin: auto;
     padding: 20px;
     border-style: solid;
-    border-color: var(--border-text);
+    border-color: var(--tertiary);
     border-width: 10px;
     border-radius: 10px;
-    background-color: var(--primary-background);
+    background-color: var(--alt);
 }
 div.sub {
     width: 75%;
     margin: auto;
     padding: 10px;
     border-style: solid;
-    border-color: var(--border-text);
+    border-color: var(--tertiary);
     border-width: 0px;
     border-radius: 10px;
-    background-color: var(--primary-background);
+    background-color: var(--alt);
     font-size: 18px;
 }
 div.main {
@@ -83,13 +83,13 @@ div.home {
     margin-top: 120px;
 }
 p {
-    color: black;
+    color: var(--text);
     text-align: center;
     position: relative;
     font-size: 22px;
 }
 p.sub{
-    color: black;
+    color: var(--text);
     text-align: left;
     position: relative;
     font-size: 18px;
@@ -102,6 +102,7 @@ ul {
     margin: 0;
     text-align: left;
     list-style-position: inside;
+    color: var(--text);
 }
 li {
     vertical-align: left;
@@ -118,14 +119,14 @@ iframe {
 
 /* Top Navigation Bar */
 div.topnav {
-    background-color: var(--nav-background);
+    background-color: var(--secondary);
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
     margin: auto;
     z-index: 999;
-    border-bottom: 10px solid var(--nav-border);
+    border-bottom: 10px solid var(--primary);
 }
 .topnav a {
     display: block;
@@ -134,16 +135,14 @@ div.topnav {
     text-align: center;
     font-size: 36px;
     float: left;
-    color: #000000;
+    color: var(--text);
     border-radius: 10px;
   }
 .topnav a:active {
-    background-color: #000000;
     color: white;
 }
 .topnav a:hover {
-    background-color: var(--primary-background);
-    color: black;
+    background-color: var(--primary);
 }
 div.topnav-selection {
     margin-left: 20%;
@@ -157,7 +156,7 @@ div.sidenav {
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: var(--primary-background);
+    background-color: var(--tertiary);
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
 }
@@ -166,7 +165,7 @@ div.sidenav a {
     padding: 6px 8px 6px 30px;
     text-decoration: none;
     font-size: 24px;
-    color: #000000;
+    color: var(--text);
     display: block;
     border-radius: 10px;
 }
@@ -178,8 +177,8 @@ a.anchor {
 }
 /* - When you mouse over the navigation links, change their color */
 div.sidenav a:hover {
-    background-color: #e4d3fa;
-    color: #000000;
+    background-color: var(--alt);
+    color: var(--text);
 }
 div.sidenav-selection {
     margin-top: 15%;
@@ -211,10 +210,10 @@ div.aboutme {
     padding: 30px;
     min-height: 475px;
     border-style: solid;
-    border-color: #574a68;
+    border-color: var(--tertiary);
     border-width: 15px;
     border-radius: 20px;
-    background-color: #cebfe2;
+    background-color: var(--alt);
 }
 div.aboutme-section {
     display: flex;
@@ -250,9 +249,9 @@ summary {
     display: flex;
     cursor: pointer;
     font-size: 20px;
-    border: 5px solid var(--border-text);
+    border: 5px solid var(--secondary);
     border-radius: 10px;
-    background-color: var(--nav-background);
+    background-color: var(--tertiary);
     padding: 10px;
 }
 
@@ -265,7 +264,7 @@ p.details {
     padding: 10px;
     margin-top: 0;
     margin-bottom: 0;
-    background-color: var(--secondary-background);
+    background-color: var(--secondary);
 }
 
 li.big {
