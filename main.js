@@ -52,6 +52,21 @@ let projectSlides = [
         aHRef : "Group Projects.html#DiplomaticEmmunity",
         caption : "Diplomatic Emmunity by The Emu Agenda",
         image : "Images/Diplomatic_Emmunity.png"
+    },
+    {
+        aHRef : "Solo University Projects.html#Dissertation",
+        caption : "Dissertation on Context Steering",
+        image : "Images/Artefact.png"
+    },
+    {
+        aHRef : "Solo University Projects.html#AuroraLights",
+        caption : "Aurora Lights Simulation",
+        image : "Images/AuroraLights.png"
+    },
+    {
+        aHRef : "Solo University Projects.html#BossFight",
+        caption : "Kirby and the Forgotten Land: Gorimondo Boss Fight Prototype",
+        image : "Images/BossFight.png"
     }
 ]
 
