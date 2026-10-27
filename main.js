@@ -1,8 +1,8 @@
-async function displayContacts(contents, filePath) {
+async function loadComponents(contents, filePath) {
     try {
         let response = await fetch(filePath);
         if (!response.ok) {
-            console.error("Failed to fetch contacts.");
+            console.error("Failed to fetch contents.");
             return;
         }
         contents.innerHTML = await response.text();
@@ -17,5 +17,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (!contacts) {
         console.error("Placeholder #contacts not found in this page.");
     }
-    await displayContacts(contacts, "contacts.html");
+    await loadComponents(contacts, "contacts.html");
+
+    const topnav = document.querySelector("#topnav");
+    if (!topnav) {
+        console.error("Placeholder #topnav not found in this page.");
+    }
+    await loadComponents(topnav, "TopNav.html");
 });
